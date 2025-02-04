@@ -1,0 +1,490 @@
+.voter{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#vote-container
+{
+  margin-top: 3.5rem;
+  height: 70%;
+}
+
+
+input
+{
+    font-weight: bold;
+    color: #000000;
+}
+.acc{
+margin-top: 50px;
+}
+
+.acc1
+{
+    margin-bottom: 50px;
+}
+h1
+{
+    text-align: center;
+}
+
+.Heading-four
+{
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.input-box-gender,.input-box-Gender
+{
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 6px;
+    height: 60px;
+}
+.gender-options,.Gender-options {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between each button */
+ 
+  }
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;/* Space between the radio button and label */}
+.Gender-options label
+{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin-bottom: 3px;/* Space between the radio button and label */
+
+}
+
+.voter {
+    background-color: solid white;
+    backdrop-filter: solid white blur;
+    background: linear-gradient(to right, #0af17e, #c9d6ff);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 120vh;
+
+}
+
+.voter-container {
+    background-color: #fff;
+    border-radius: 20px; /* Softer border radius for a modern look */
+    border: 3px solid rgba(0, 150, 136, 0.4); /* Subtle colored border */
+    box-shadow: 0 10px 40px rgba(13, 236, 225, 0.548); /* More prominent shadow for depth */
+    overflow: hidden;
+    max-width: 100%;
+    height: 80%;
+    width: 100%;
+    min-height: 580px; /* Adjusted height for better fit */
+    padding: 30px; /* Added padding for inner spacing */
+    background: transparent;
+    margin-top: 4rem;
+}
+
+.voter-container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+    background: transparent;
+}
+
+.voter-container span {
+    font-size: 12px;
+}
+
+.voter-container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+    background: transparent;
+}
+
+.voter-container button {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.voter-container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.voter-container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    background: transparent;
+}
+
+.voter-container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    backdrop-filter: blur(20px);
+     /* Smooth glassy effect */  
+}
+
+
+.Voter-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    background: transparent;
+    backdrop-filter: solid white blur(100%);
+}
+.voter-container.active .Voter-in {
+    transform: translateX(100%);
+    backdrop-filter: solid white blur(100%);
+}
+
+.Voter-out {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+    background: transparent;
+    backdrop-filter: solid white blur(100%);
+}
+.front
+{
+    background-color: #ff970f;
+    font-weight: bold;
+}
+#Voter-username,#Voter-id , #Voter-dob,#Voter-phone, #Voter-year,#Voter-branch,.input-box-gender,.input-box-Gender,
+#Voter-confirmpassword,#Voter-confirmpassword,#Voter-password
+ {
+    width: 20rem ;
+ }
+ #key-icon,#email-icon
+ {
+    margin-right:100px
+ }
+ #Voter-otp,#Voter-email
+ {
+    width:12rem;
+    margin-left: 3px;
+
+
+ }
+ button
+ {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+ }
+ #voter-btn1-otp,#voter-btn-otp
+ {
+    width: 10px;
+    margin-left:10px;
+    margin-top: 2px;
+
+ }
+
+
+ #Voter-username:hover,#Voter-id:hover , #Voter-dob:hover,#Voter-email:hover,#Voter-phone:hover, #Voter-year:hover,#Voter-branch:hover,.input-box-Gender:hover,#Voter-confirmpassword:hover,#Voter-password:hover,#Voter-otp:hover
+ {
+    border: 2px black solid;
+ }
+ #participant-year,#Voter-year
+ {
+    height: 2.3rem;
+    width: 20rem;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    background-color: #eee;
+    font-weight: bold;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#participant-branch,#Voter-branch
+ {
+    height: 2.3rem;
+    width: 20rem;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    
+    background-color: #eee;
+    font-weight: bold;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.input-voter-container i 
+{
+            position: absolute;
+            right: 15px; /* Position the icon to the right */
+            font-size: 16px;
+            color: #000000;
+        }
+.voter-container.active .Voter-out {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+    backdrop-filter: solid white blur(100%);
+}
+
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    backdrop-filter: solid white blur(100%);
+    background: transparent;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 900;
+    background: transparent;
+    backdrop-filter: solid white blur(100%);
+    
+}
+
+.voter-container.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+    background: transparent;
+    backdrop-filter: solid white blur(100%);
+     
+}
+
+.toggle {
+    background-color: #ff970f;
+    height: 100%;
+    background: rgb(45, 197, 197);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.voter-container.active .toggle {
+    transform: translateX(50%);
+    
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.voter-container.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.voter-container.active .toggle-right {
+    transform: translateX(200%);
+}
+
+.glassy {
+    background: rgba(255, 255, 255, 0); /* Fully transparent background */
+    backdrop-filter: blur(80px); /* Stronger blur for the active glassy effect */
+    box-shadow: 100 100% 100% rgba(0, 2, 1, 0.9); /* Subtle shadow for depth */
+}.voter-container {
+    background-color:red;
+    border-radius: 20px; /* Softer border radius for a modern look */
+    border: 3px solid rgba(0, 150, 136, 0.4); /* Subtle colored border */
+    box-shadow: 19 100% 40% rgba(13, 236, 225, 0.548); /* More prominent shadow for depth */
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    height: 100%;
+    max-width: 100%;
+    min-height: 480px;
+    background: transparent;
+}
+.country-code {
+    position: absolute;
+    left: 15px;
+    color: #000000;
+    font-weight: 700;  /* Makes the text bolder */
+    z-index: 1;
+    font-size: 14px;  /* Slightly larger for better visibility */
+}
+
+.input-voter-container input[type="tel"] {
+    padding-left: 45px !important; /* Make space for country code */
+}
+
+.input-voter-container i {
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+    color: #000000;
+}
+ 
+.input-voter-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+.input-voter-container input {
+            padding-right: 35px;
+            /*Addspacefortheicon*/background-color: #eee;
+            border: none;
+            margin: 8px 0;
+            padding: 10px 15px;
+            font-size: 13px;
+            border-radius: 8px;
+            width: 100%;
+            outline: none;
+}
+.input-voter-container.phone {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #eee;
+}
+
+.country-code {
+    color: #333;
+    font-weight: 500;
+    padding-right: 8px;
+    border-right: 1px solid #999;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-voter-container.phone input[type="tel"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 13px;
+    margin: 0;
+    background: transparent;
+}
+
+input::placeholder {
+    color: gray; /* Change this to any color you want */
+    opacity: 1;  /* Ensure full visibility */
+  }
+  
+
+.input-voter-container.phone .phone-icon {
+    position: static;
+    color: #666;
+    font-size: 16px;
+    margin-left: 8px;
+    background: #ddd;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-voter-container.phone:hover {
+    border: 2px solid black;
+}
+
+/* Maintain the existing width */
+.input-box.phone {
+    width: 20rem;
+}
+
+
+
+ 
+

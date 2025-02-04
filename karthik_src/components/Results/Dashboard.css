@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 15px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.navbar a:hover {
+  color: cyan;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.item {
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 20px cyan;
+  transition: transform 0.3s ease-in-out;
+  padding: 15px;
+  height: 300px; /* Adjusted height */
+}
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px cyan;
+}
+
+.leaderboard {
+  background: rgba(255, 0, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px magenta;
+  max-width: 1420px;
+  margin: 20px auto;
+}
+.leaderboard h2 {
+  text-align: center;
+  color: magenta;
+}
+.leaderboard table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.leaderboard th,
+.leaderboard td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 0, 255, 0.3);
+}
+.leaderboard tr:hover {
+  background: rgba(255, 0, 255, 0.2);
+  cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
