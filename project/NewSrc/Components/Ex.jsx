@@ -1,3 +1,3 @@
 export default function Ex() {
-  return <h1>hello</h1>;
+  return <h1>heio</h1>;
 }
