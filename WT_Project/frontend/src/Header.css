@@ -1,0 +1,89 @@
+.app-header-container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures elements fit within their assigned width */
+}
+
+.link1,.link2,.link3,.link4,.link5,.link6{
+    /* background-color: rgba(0, 85, 165, 0.9); */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.link1:hover,.link2:hover,.link3:hover,.link4:hover,.link5:hover,.link6:hover{
+        /* background-color: rgba(0, 119, 204, 0.9); */
+        transform: scale(1.05);
+}
+.App-header {
+    background-color: rgba(0, 51, 102, 0.9);
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;  /* Ensures it starts from the leftmost side */
+    width: 100%; /* Ensures it stretches across the entire viewport */
+    z-index: 1000;
+}
+
+.App-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideRight 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav button {
+    background-color: rgba(0, 85, 165, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: rgba(0, 119, 204, 0.9);
+    transform: scale(1.05);
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

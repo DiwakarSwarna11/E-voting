@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+  
+  .team-section {
+    text-align: center;
+    margin-top: 68PX;
+    width: 100%;
+  }
+
+  
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #69adbd;
+    gap: 80px;
+    padding: 60px;
+    height: 100%;
+    width: 100%;
+  }
+
+  h3
+  {
+    margin-top: 1px;
+  }
+  h4
+  {
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .team-card {
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+.social-icons a 
+{
+  border: 1px solid black;
+}
+  .team-image {
+    width: 60%;
+    border-radius: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+    
+  .team-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    filter: brightness(1.1); /* Brightens the image slightly */
+  }
+  
+ 
+  .social-icons i {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+  #icon-1,#icon-3,#icon-4,#icon-5,#icon-7,#icon-2
+  {
+    color: black;
+  }
+
+  #icon-1:hover {
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+#icon-3:hover {
+    transform: scale(1.3);
+    color: rgb(54, 149, 187);
+    /*Twittercolor*/
+}
+#icon-4:hover {
+    transform: scale(1.3);
+    color: rgb(99, 121, 219);
+    /*Facebookcolor*/
+}
+#icon-5:hover {
+    transform: scale(1.3);
+    color: rgb(69, 96, 219);
+    /*LinkedIncolor*/
+}
+
+#icon-7:hover {
+    transform: scale(1.3);
+    color: rgb(43, 204, 65);
+    /*WhatsAppcolor*/
+}
+#icon-2:hover {
+    transform: scale(1.3);
+    color: black;
+}
