@@ -11,7 +11,7 @@ import VoteCast from "./components/VoteCastPage/VoteCast";
 import Results from "./components/Results/Results";
 import "./Header.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
+//asdfjlafd
 function Header() {
   const [showRegisterDropdown, setShowRegisterDropdown] = useState(false);
 
