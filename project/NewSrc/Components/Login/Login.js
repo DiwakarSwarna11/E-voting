@@ -41,7 +41,7 @@ const Login = () => {
             onSubmit={(e) => handleSubmit(e, false)}
             className="sign-in-form"
           >
-            <h2 className="title">VOTER LOGIN</h2>
+            <h2 className="title-login">VOTER LOGIN</h2>
             <div className="input-field">
               <i className="fas fa-user"></i>
               <input type="text" placeholder="Username" />

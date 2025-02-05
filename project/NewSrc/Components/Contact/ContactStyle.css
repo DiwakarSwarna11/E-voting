@@ -11,7 +11,7 @@
 #contact{
     font-family: 'Roboto','Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #00d084 0%, #4158d0 100%);
+    background:  #69adbd;
     min-height: 100vh;
     color: #333;
 }
@@ -33,7 +33,7 @@
 
 /* Hero Section */
 .contact-hero-section {
-    background: linear-gradient(135deg, #00d084 0%, #4158d0 100%);
+    background-color:#3164aa;
     padding: 2rem 0; /* Updated padding */
     position: relative;
     overflow: hidden;
@@ -79,6 +79,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 4rem 0;
+   
 }
 
 .contact-icon-item {
@@ -86,7 +87,10 @@
     padding: 2rem;
     transition: all 0.3s ease;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.15);
+   
+  background: #5ca0af;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -94,12 +98,16 @@
 
 .contact-icon-item:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.25);
+    
+  background: #5ca0af;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-icon-item i {
-    font-size: 2.5rem;
-    background: linear-gradient(45deg, #00d084, #4158d0);
+    font-size: 5.5rem;
+    
+    background-color: #3164aa;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
@@ -119,7 +127,10 @@
 .contact-form-container {
     padding: 1.5rem; /* Updated padding */
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.15);
+    
+  background: #5ca0af;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -161,7 +172,7 @@
 }
 
 .message {
-    background: linear-gradient(45deg, #00d084, #4158d0);
+   background-color:#3164aa;
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -177,6 +188,7 @@
 .contact-message:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
 }
 
 /* Image Cards Section */
@@ -185,6 +197,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 4rem 0;
+   
 }
 
 .contact-card {
@@ -195,11 +208,19 @@
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    
+  background: #5ca0af;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    
+  background: #5ca0af;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .contact-card img {
@@ -215,7 +236,7 @@
 
 .contact-card-content h3 {
     margin-bottom: 0.5rem;
-    background: linear-gradient(45deg, #00d084, #4158d0);
+    background-color: #3164aa;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -261,8 +282,9 @@
     transition: 0.5s;
     font-size: 1.1rem;
   }
+   
   .contact-message, .contact-file-label {
-    background: linear-gradient(45deg, #00d084, #4158d0);
+    background: #3944dd;
     color: white;
     padding: 1rem 2rem;
     border: none;
