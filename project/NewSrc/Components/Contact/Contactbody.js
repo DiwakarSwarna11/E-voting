@@ -49,19 +49,43 @@ function Contact() {
               <h2 className="contact-Head2">Send us a Message</h2>
               <form id="contactForm">
                 <div className="contact-form-group">
-                  <label htmlFor="name" className="Contact-label">Full Name</label>
-                  <input type="text" id="name"  placeholder="username" required />
+                  <label htmlFor="name" className="Contact-label">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="username"
+                    required
+                  />
                 </div>
                 <div className="contact-form-group">
-                  <label htmlFor="file" className="Contact-label">File</label>
-                  <input type="file" id="contact-file" className="contact-file-input" required />
-                  <label htmlFor="contact-file" className="contact-file-label" >Choose File</label>
+                  <label htmlFor="file" className="Contact-label">
+                    File
+                  </label>
+                  <input
+                    type="file"
+                    id="contact-file"
+                    className="contact-file-input"
+                    required
+                  />
+                  <label htmlFor="contact-file" className="contact-file-label">
+                    Choose File
+                  </label>
                 </div>
                 <div className="contact-form-group">
-                  <label htmlFor="contact-message" className="Contact-label">Your Message</label>
-                  <textarea id="contact-message" required placeholder="Enter your message"></textarea>
+                  <label htmlFor="contact-message" className="Contact-label">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    required
+                    placeholder="Enter your message"
+                  ></textarea>
                 </div>
-                <button type="submit" class="contact-message">Send Message</button>
+                <button type="submit" class="contact-message">
+                  Send Message
+                </button>
               </form>
             </div>
             <div className="contact-image">
@@ -70,25 +94,46 @@ function Contact() {
           </div>
         </section>
 
-        <h1 className="contact-head">FOR MORE INFORMATION<br />eVoting</h1>
+        <h1 className="contact-head">
+          FOR MORE INFORMATION
+          <br />
+          eVoting
+        </h1>
         <br />
 
         <div className="contact-image-cards">
-          <div className="contact-card" onClick={() => openLink('https://right2vote.in/what-we-do/student-voting/college-elections/')}> 
+          <div
+            className="contact-card"
+            onClick={() =>
+              openLink(
+                "https://right2vote.in/what-we-do/student-voting/college-elections/"
+              )
+            }
+          >
             <img src={ev} alt="Education image 1" className="card" />
             <div className="contact-card-content">
               <h3>Explore more - Online Voting</h3>
               <p>right2vote.in</p>
             </div>
           </div>
-          <div className="contact-card" onClick={() => openLink('https://eligovoting.com/universities/')}> 
+          <div
+            className="contact-card"
+            onClick={() => openLink("https://eligovoting.com/universities/")}
+          >
             <img src={eligo} alt="Education image 2" className="contact-card" />
             <div className="contact-card-content">
               <h3>Explore more - Online Voting</h3>
               <p>eligovoting.com</p>
             </div>
           </div>
-          <div className="contact-card" onClick={() => openLink('https://www.polyas.com/universities/university-elections/online')}> 
+          <div
+            className="contact-card"
+            onClick={() =>
+              openLink(
+                "https://www.polyas.com/universities/university-elections/online"
+              )
+            }
+          >
             <img src={pp} alt="Education image 3" className="contact-card" />
             <div className="contact-card-content">
               <h3>Explore more - Online Voting</h3>

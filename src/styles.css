@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f4f4, #e9ecef);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #d0d9e4, #6a0dad);
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(90deg, #6a0dad, #007bff);
+  color: white;
+}
+
+/* Glassmorphism Container Styles */
+.app-container,
+.login-container,
+.admin-container,
+.voting-container,
+.results-container {
+  padding: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.2);
+  /* Transparent white with slight color */
+  backdrop-filter: blur(12px);
+  /* Frosted glass effect */
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  /* Slightly brighter border for contrast */
+}
+
+/* Specific Colorful Containers */
+.app-container {
+  background: rgba(0, 123, 255, 0.2);
+  /* Light blue for app container */
+}
+
+.login-container {
+  background: rgba(40, 167, 69, 0.2);
+  /* Light green for login container */
+}
+
+.admin-container {
+  background: rgba(255, 193, 7, 0.2);
+  /* Light yellow for admin panel */
+}
+
+.voting-container {
+  background: rgba(0, 123, 255, 0.2);
+  /* Light blue for voting page */
+}
+
+.results-container {
+  background: rgba(255, 87, 34, 0.2);
+  /* Light red/orange for results page */
+}
+
+/* Input Fields */
+input {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 320px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  /* Transparent white background */
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+button {
+  background: linear-gradient(90deg, #007bff, #6a0dad);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  margin: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #6a0dad, #007bff);
+}
+
+/* Glassmorphism Specific Styling */
+.login-container,
+.admin-container,
+.voting-container {
+  backdrop-filter: blur(12px);
+  /* Stronger blur for a more defined glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.login-container button {
+  width: 100%;
+  background: linear-gradient(90deg, #28a745, #20c997);
+}
+
+.login-container button:hover {
+  background: linear-gradient(90deg, #20c997, #28a745);
+}
+
+.admin-container button {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #28a745, #20c997);
+  color: white;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.admin-container button:hover {
+  background: linear-gradient(90deg, #20c997, #28a745);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #343a40, #212529);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
